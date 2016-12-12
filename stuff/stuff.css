@@ -1,4 +1,4 @@
-body, html {margin:0; padding: 0; width: 100%; height: 100%; font-family: 'PT Serif', serif}
+body, html {margin:0; padding: 0; width: 100%; height: 100%; font-family: 'PT Serif', serif;}
             .narrative {
                 position: relative;
                 margin: 0 10% 0 60%;
@@ -19,31 +19,6 @@ body, html {margin:0; padding: 0; width: 100%; height: 100%; font-family: 'PT Se
             .dark {
                 color: rgb(255,255,255);
                 letter-spacing: .6px;
-            }
-            .zero {
-                background: #000 url("shipMasts.jpg") no-repeat;
-                color: rgb(31,33,36);
-                font-size: 56px;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0 !important;
-            }
-            .zero .header{
-                letter-spacing: 18px;
-                opacity: 1;
-                animation: headerIn 4s;
-            }
-            @keyframes headerIn{
-                0% {
-                    opacity: 0;
-                    letter-spacing: 60px;
-                }
-                100% {
-                    opacity: 1;
-                    letter-spacing: 18px;
-                }
             }
             .oneone {
                 background: #FFF url("sqrt1.png") no-repeat;
@@ -78,7 +53,7 @@ body, html {margin:0; padding: 0; width: 100%; height: 100%; font-family: 'PT Se
                 color: rgb(255,255,255);
             }
             .six {
-                background: #000 url("firex210000.jpg") no-repeat;
+                background: rgb(161,64,48) url("firex210000.jpg") no-repeat;
                 color: rgb(21,23,26);
             }
             .seven {
@@ -193,6 +168,33 @@ body, html {margin:0; padding: 0; width: 100%; height: 100%; font-family: 'PT Se
                 background: #000 url("stripes.jpg") no-repeat;
                 color: rgb(255,255,255);
             }
+            .zero {
+                background: #000 url("shipMasts.jpg") no-repeat;
+                color: rgb(31,33,36);
+                font-size: 56px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .zeromobile {
+                background: #000 url("shipMastsM.jpg") no-repeat;
+            }
+            .zero .header{
+                letter-spacing: 18px;
+                opacity: 1;
+                animation: headerIn 4s;
+            }
+            @keyframes headerIn{
+                0% {
+                    opacity: 0;
+                    letter-spacing: 60px;
+                }
+                100% {
+                    opacity: 1;
+                    letter-spacing: 18px;
+                }
+            }
 
             .layers {
                 position: relative;
@@ -202,6 +204,9 @@ body, html {margin:0; padding: 0; width: 100%; height: 100%; font-family: 'PT Se
                 background-attachment: fixed;
                 background-size: cover;
             }
+            .zero {
+                padding: 0;
+            }
 
             .narrative .credits {
                 font-family: Verdana, sans-serif;
@@ -209,5 +214,19 @@ body, html {margin:0; padding: 0; width: 100%; height: 100%; font-family: 'PT Se
                 line-height: 18px;
                 letter-spacing: .4px;
                 margin-top: 240px;
+            }
+
+            .mobile{
+                background-attachment: inherit;
+                background-size: contain;
+                padding: 60px 0; 
+                width:100vw;
+                min-height: calc(100vw * 413 / 720 - 120px);
+            }
+            .mobile .narrative p{
+                line-height: 28px;
+            }
+            .mobile .header{
+                animation: none;
             }
             
